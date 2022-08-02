@@ -50,7 +50,7 @@ Planform of the cavity receiver as follows:
 
 ![planform of the cavity receiver](./PS10/cavity_receiver_outline.png)
 
-Some parameters data about PS10 can be found in [[6]](#reference)[[7]](#reference).
+Some parameters data about PS10 can be found in [[6]](#reference),[[7]](#reference)and[[8]](#reference).
 
 ##### Reference
 
@@ -67,3 +67,5 @@ Some parameters data about PS10 can be found in [[6]](#reference)[[7]](#referenc
 [6]. Osuna R, Olavarría R, Morillo R, et al. PS10, Construction of a 11MW solar thermal tower plant in Seville, Spain[C]//Proc. 13th IEA SolarPACES Symp. 2006: A4-S3.
 
 [7]. Schöttl P, Bern G, Pretel J A F, et al. Optimization of Solar Tower molten salt cavity receivers for maximum yield based on annual performance assessment[J]. Solar Energy, 2020, 199: 278-294.
+
+[8]. Belaid A, Filali A, Hassani S, et al. Heliostat field optimization and comparisons between biomimetic spiral and radial-staggered layouts for different heliostat shapes[J]. Solar Energy, 2022, 238: 162-177.
