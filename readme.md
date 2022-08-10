@@ -28,7 +28,7 @@ Only layout data file without parameter file under the folder ``./Gemasolar_Flux
 
 The Gemasolar layout from Flux_SPT is very similar to the data extracted by [LiuZengqiang](https://github.com/LiuZengqiang). It looks like follows:
 
-![Gemasolar_FluxSPT](C:\Users\Sth\Desktop\2022年光热太阳能仿真与建模\太阳能镜场数据整理\Gemasolar_FluxSPT\layout.png)
+![Gemasolar_FluxSPT](.\Gemasolar_FluxSPT\layout.png)
 
 
 
@@ -74,7 +74,7 @@ The Crescent Dunes Solar Energy Project is a solar thermal power project located
 
 The heliostats layout as follows:
 
-![Crescent Dunes](C:\Users\Sth\Desktop\2022年光热太阳能仿真与建模\太阳能镜场数据整理\CrescentDunes\layout.png)
+![Crescent Dunes](.\CrescentDunes\layout.png)
 
 #####  Dunhuang-10MW
 
@@ -82,7 +82,7 @@ Dunhuang-10MW plant is located in Dunhuang, Gansu Province, China. It has connec
 
 The layout of it look likes as follows:
 
-![Dunhuang-10MW](C:\Users\Sth\Desktop\2022年光热太阳能仿真与建模\太阳能镜场数据整理\Dunhuang_10MW\layout.png)
+![Dunhuang-10MW](.\Dunhuang_10MW\layout.png)
 
 ##### Reference
 
