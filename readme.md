@@ -1,10 +1,10 @@
-### Classical Concentrated Solar Power Field Data
+## Classical Concentrated Solar Power Field Data
 
 This repository contains the solar tower power field data commonly used in concentrated solar power technology research.
 
 There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar from FluxSPT), simulation [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent Dunes) and [**Dunhuang-10MW**](#Dunhuang-10MW) solar field data.
 
-##### Gemasolar  
+### Gemasolar  
 
 Gemasolar is located in Andalucía, Spain, began in 2008, putted into operation in 2011.
 
@@ -18,9 +18,7 @@ The layout of heliostat field references [[1]](#reference)，every position of h
 
 Other parameters of Gemasolar  reference [[2]](#reference) and [[3]](#reference).
 
-
-
-##### Gemasolar from FluxSPT
+### Gemasolar from FluxSPT
 
 The previous Gemasolar field layout data is extracted by [LiuZengqiang](https://github.com/LiuZengqiang) basing Google Map, and there are another Gemasolar field layout data in flux simulation software [FluxSPT](https://ise.uc3m.es/research/solar-energy/fluxspt/) [[4]](#reference).
 
@@ -30,9 +28,7 @@ The Gemasolar layout from Flux_SPT is very similar to the data extracted by [Liu
 
 ![Gemasolar_FluxSPT](./Gemasolar_FluxSPT/layout.png)
 
-
-
-##### 6282
+### 6282
 
 6282 is a simulation solar field in [Soltrace](https://www.nrel.gov/csp/soltrace.html) [[5]](#reference)which is not a real solar field.
 
@@ -46,9 +42,7 @@ Other parameters is also exported in the example input file ``test2.stinput``.
 
 By the way, the ``/6282/test2.stinput`` can be opened using the software [Soltrace](https://www.nrel.gov/csp/soltrace.html).
 
-
-
-##### PS10
+### PS10
 
 PS10 is located in Sevilla, Spain, constructed began in 2005, operation begin in 2007.
 
@@ -66,9 +60,7 @@ Planform of the cavity receiver as follows:
 
 Some parameters data about PS10 can be found in [[7]](#reference),[[8]](#reference)and[[9]](#reference).
 
-
-
-##### Crescent Dunes
+### Crescent Dunes
 
 The Crescent Dunes Solar Energy Project is a solar thermal power project located near Tonopah. The layout of Crescent Dunes is extracted from software FluxSPT. In reality, it contains 10347 heiostats, but only 10301 heliostats 's position data in FluxSPT (without the data of outermost heliostat). Due to a lack of time, no parameters of the solar plant in this repository.
 
@@ -76,7 +68,7 @@ The heliostats layout as follows:
 
 ![Crescent Dunes](./CrescentDunes/layout.png)
 
-#####  Dunhuang-10MW
+### Dunhuang-10MW
 
 Dunhuang-10MW plant is located in Dunhuang, Gansu Province, China. It has connected to the grid in 2016. The plant is configured with 1525 heliostat. The layout data is also extracted in FluxSPT. Regrettably, there is no parameters of the plant.
 
@@ -84,7 +76,7 @@ The layout of it look likes as follows:
 
 ![Dunhuang-10MW](./Dunhuang_10MW/layout.png)
 
-##### Reference
+### Reference
 
 [1]. Sánchez-González A, Rodríguez-Sánchez M R, Santana D. Aiming strategy model based on allowable flux densities for molten salt central receivers[J]. Solar Energy, 2017, 157: 1130-1144.
 
