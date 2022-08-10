@@ -2,7 +2,7 @@
 
 This repository contains the solar tower power field data commonly used in concentrated solar power technology research.
 
-There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar from FluxSPT), simulation [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent Dunes) and [**Dunhuang-10MW**](#Dunhuang-10MW) solar field data.
+There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), simulation [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent-Dunes) and [**Dunhuang-10MW**](#Dunhuang-10MW) solar field data.
 
 
 
@@ -22,7 +22,7 @@ Other parameters of Gemasolar  reference [[2]](#reference) and [[3]](#reference)
 
 
 
-### Gemasolar from FluxSPT
+### Gemasolar-from-FluxSPT
 
 The previous Gemasolar field layout data is extracted by [LiuZengqiang](https://github.com/LiuZengqiang) basing Google Map, and there are another Gemasolar field layout data in flux simulation software [FluxSPT](https://ise.uc3m.es/research/solar-energy/fluxspt/) [[4]](#reference).
 
@@ -70,7 +70,7 @@ Some parameters data about PS10 can be found in [[7]](#reference),[[8]](#referen
 
 
 
-### Crescent Dunes
+### Crescent-Dunes
 
 The Crescent Dunes Solar Energy Project is a solar thermal power project located near Tonopah. The layout of Crescent Dunes is extracted from software FluxSPT. In reality, it contains 10347 heiostats, but only 10301 heliostats 's position data in FluxSPT (without the data of outermost heliostat). Due to a lack of time, no parameters of the solar plant in this repository.
 
