@@ -198,7 +198,7 @@ if __name__ == "__main__":
     lr = 12.     # receiver height, m
     Ht = 75.0      # aim point height, m
     Dt = 8       # tower diameter, m
-    BL = 0.523      # terrain slope rising away from the tower, radian
+    BL = 0.0      # terrain slope rising away from the tower, radian
     PSImax = np.pi   # maximum angular direction, radians (in 1 and 2 quadrant, total angle is 2.0*PSImax), radian
     Rmax = 3.2*Ht  # maximum ring radius in the field, m
     Rmin = 0.8*Ht      # minimum ring radius in the field, m
