@@ -1,10 +1,22 @@
-## Classical Concentrated Solar Power Heliostat Field Layout
+# Classical Concentrated Solar Power Heliostat Field Layout
 
-
+## Introduction
 This repository contains the solar tower power heliostat field layout data commonly used in concentrated solar power technology research.
 
 There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), simulation [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent-Dunes), [**Dunhuang-10MW**](#Dunhuang-10MW) and [**MUEEN**](#MUEEN) heliostat field layout data.
 
+
+## Heliostat Field Layouts
+
+|Layout Name|Type|
+|:-:|:-:|
+|[Gemasolar](#Gemasolar)|Real CSP Heliostat Layout|
+|[Gemasolar-from-FluxSPT](#Gemasolar-from-FluxSPT)|Real CSP Heliostat Layout|
+|[6282](#6282)|Virtual Heliostat Layout|
+|[PS10](#PS10)|Real CSP Heliostat Layout|
+|[Crescent-Dunes](#Crescent-Dunes)|Real CSP Heliostat Layout|
+|[Dunhuang-10MW](#Dunhuang-10MW)|Real CSP Heliostat Layout|
+|[MUEEN](#MUEEN)|A heliostat lay out method|
 
 
 ### Gemasolar  
@@ -37,7 +49,7 @@ The Gemasolar layout from Flux_SPT is very similar to the data extracted by [Liu
 
 ### 6282
 
-6282 is a simulation solar field in [Soltrace](https://www.nrel.gov/csp/soltrace.html) [[5]](#reference)which is not a real solar field.
+6282 is a virtual heliostat field layout in [Soltrace](https://www.nrel.gov/csp/soltrace.html) [[5]](#reference).
 
 The heliostats layout as follows:
 
@@ -67,13 +79,13 @@ Planform of the cavity receiver as follows:
 
 ![planform of the cavity receiver](./PS10/cavity_receiver_outline.png)
 
-Some parameters data about PS10 can be found in [[7]](#reference),[[8]](#reference)and[[9]](#reference).
+Some parameters data about PS10 can be found in [[7]](#reference), [[8]](#reference) and [[9]](#reference).
 
 
 
 ### Crescent-Dunes
 
-The Crescent Dunes Solar Energy Project is a solar thermal power project located near Tonopah. The layout of Crescent Dunes is extracted from software FluxSPT. In reality, it contains 10347 heiostats, but only 10301 heliostats 's position data in FluxSPT (without the data of outermost heliostat). Due to a lack of time, no parameters of the solar plant in this repository.
+The Crescent Dunes Solar Energy Project is a solar thermal power project located near Tonopah. The layout of Crescent Dunes is extracted from software FluxSPT. In reality, it contains 10347 heiostats, but only 10301 heliostats's position data in FluxSPT (without the data of outermost heliostats).  
 
 The heliostats layout as follows:
 
@@ -90,7 +102,9 @@ The layout of it look likes as follows:
 ![Dunhuang-10MW](./Dunhuang_10MW/layout.png)
 
 ### MUEEN  
-Mathematical formulation of a graphical method for a no-blocking heliostat ﬁeld layout(MUEEN) is a graphical method for a no-blocking radial staggered heliostat layout proposed by Siala in [[10]](#reference).  
+Mathematical formulation of a graphical method for a no-blocking heliostat ﬁeld layout(MUEEN) is a graphical method for a no-blocking radial staggered heliostat layout proposed by Siala in [[10]](#reference). 
+
+``MUEEN.py`` is a python implementation of MUEEN from matlab code [Solstice-Software (mueen_fun.m)](https://www.labex-solstice.fr/solstice-software/#tower) [[11]](#reference).  
 
 The input of MUEEN method is:
 ```
@@ -113,7 +127,7 @@ An example MUEEN layout look likes as follows:
 
 ![MUEEN-example](./MUEEN/layout.png)
 
-### Reference
+## Reference
 
 [1]. Sánchez-González A, Rodríguez-Sánchez M R, Santana D. Aiming strategy model based on allowable flux densities for molten salt central receivers[J]. Solar Energy, 2017, 157: 1130-1144.
 
@@ -134,3 +148,5 @@ An example MUEEN layout look likes as follows:
 [9]. Belaid A, Filali A, Hassani S, et al. Heliostat field optimization and comparisons between biomimetic spiral and radial-staggered layouts for different heliostat shapes[J]. Solar Energy, 2022, 238: 162-177.
 
 [10]. Siala F M F, Elayeb M E. Mathematical formulation of a graphical method for a no-blocking heliostat field layout[J]. Renewable energy, 2001, 23(1): 77-92.
+
+[11]. Le Labex Solstice. (n.d.). Le Labex Solstice. https://www.labex-solstice.fr/solstice-software/#tower
