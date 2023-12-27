@@ -1,8 +1,9 @@
-## Classical Concentrated Solar Power Field Data
+## Classical Concentrated Solar Power Heliostat Field Layout
 
-This repository contains the solar tower power field data commonly used in concentrated solar power technology research.
 
-There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), simulation [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent-Dunes) and [**Dunhuang-10MW**](#Dunhuang-10MW) solar field data.
+This repository contains the solar tower power heliostat field layout data commonly used in concentrated solar power technology research.
+
+There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), simulation [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent-Dunes), [**Dunhuang-10MW**](#Dunhuang-10MW) and [**MUEEN**](#MUEEN) heliostat field layout data.
 
 
 
@@ -88,7 +89,29 @@ The layout of it look likes as follows:
 
 ![Dunhuang-10MW](./Dunhuang_10MW/layout.png)
 
+### MUEEN  
+Mathematical formulation of a graphical method for a no-blocking heliostat ﬁeld layout(MUEEN) is a graphical method for a no-blocking radial staggered heliostat layout proposed by Siala in [[10]](#reference).  
 
+The input of MUEEN method is:
+```
+lm: heliostat length, m
+wm: heliostat width, m
+z0: height of the heliostat center from the base, m
+fa: ratio of the reflecting surface to the total surface of a heliostat
+dS: ratio of heliostat separation distance to heliostat length
+lr: receiver height, m
+Ht: aim point height, m
+Dt: tower diameter, m
+BL: terrain slope rising away from the tower, radian
+PSImax: maximum angular direction, radians (in 1 and 2 quadrant, total angle is 2.0*PSImax), radian
+Rmax: maximum ring radius in the field, m
+Rmin: minimum ring radius in the field, m
+```
+
+and the output is coordinates of each heliostat.  
+An example MUEEN layout look likes as follows:  
+
+![MUEEN-example](./MUEEN/layout.png)
 
 ### Reference
 
@@ -109,3 +132,5 @@ The layout of it look likes as follows:
 [8]. Schöttl P, Bern G, Pretel J A F, et al. Optimization of Solar Tower molten salt cavity receivers for maximum yield based on annual performance assessment[J]. Solar Energy, 2020, 199: 278-294.
 
 [9]. Belaid A, Filali A, Hassani S, et al. Heliostat field optimization and comparisons between biomimetic spiral and radial-staggered layouts for different heliostat shapes[J]. Solar Energy, 2022, 238: 162-177.
+
+[10]. Siala F M F, Elayeb M E. Mathematical formulation of a graphical method for a no-blocking heliostat field layout[J]. Renewable energy, 2001, 23(1): 77-92.
