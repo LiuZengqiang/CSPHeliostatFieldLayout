@@ -55,11 +55,11 @@ The heliostats layout as follows:
 
 ![6282 simulation solar field](./6282/layout.png)
 
-The layout of heliostat field is exported from the  example input file of Soltrace``test2.stinput``.
+The layout of heliostat field is exported from the  example input file of Soltrace``test2.stinput(6282.stinput)``.
 
-Other parameters is also exported in the example input file ``test2.stinput``.
+Other parameters is also exported in the example input file ``test2.stinput(6282.stinput)``.
 
-By the way, the ``/6282/test2.stinput`` can be opened using the software [Soltrace](https://www.nrel.gov/csp/soltrace.html).
+By the way, the ``/6282/6282.stinput`` can be opened using the software [Soltrace](https://www.nrel.gov/csp/soltrace.html).
 
 
 
