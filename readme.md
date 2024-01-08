@@ -127,6 +127,12 @@ An example MUEEN layout look likes as follows:
 
 ![MUEEN-example](./MUEEN/layout.png)
 
+### Solar Two  
+Solar Two was a collaborative, cost-shared project between 11 U.S. industry and utility partners and the U.S. Department of Energy to validate molten-salt power tower technology. The Solar Two plant, located east of Barstow, CA, comprised 1926 heliostats, a receiver, a thermal storage system, a steam generation system, and steam-turbine power block [[12]](#reference).  
+
+The layout of it look likes as follows:  
+![SolarTwo](./SolarTwo/layout.png)
+
 ## Reference
 
 [1]. Sánchez-González A, Rodríguez-Sánchez M R, Santana D. Aiming strategy model based on allowable flux densities for molten salt central receivers[J]. Solar Energy, 2017, 157: 1130-1144.
@@ -150,3 +156,5 @@ An example MUEEN layout look likes as follows:
 [10]. Siala F M F, Elayeb M E. Mathematical formulation of a graphical method for a no-blocking heliostat field layout[J]. Renewable energy, 2001, 23(1): 77-92.
 
 [11]. Le Labex Solstice. (n.d.). Le Labex Solstice. https://www.labex-solstice.fr/solstice-software/#tower
+
+[12]. Bradshaw R W, DAWSON D B, DE LA ROSA W, et al. Final test and evaluation results from the solar two project[R]. Sandia National Lab.(SNL-NM), Albuquerque, NM (United States); Sandia National Lab.(SNL-CA), Livermore, CA (United States), 2002.

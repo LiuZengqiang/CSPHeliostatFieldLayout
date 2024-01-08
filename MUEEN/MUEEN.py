@@ -139,7 +139,7 @@ def mueen_fun(lm, wm, z0, fa, dS, lr, Ht, BL, PSImax, Rmax, Rmin) -> list:
     z = []  # position.z of heliostat[m]
     eff = []  # group index of heliostat[m]
 
-    output_file = open("output.csv", "w")
+    output_file = open("layout.csv", "w")
     output_file.write("id,x,y,z\n")
     # STEP 14
     # output the information of all heliostat
