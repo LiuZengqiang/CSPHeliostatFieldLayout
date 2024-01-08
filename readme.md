@@ -3,7 +3,7 @@
 ## Introduction
 This repository contains the solar tower power heliostat field layout data commonly used in concentrated solar power technology research.
 
-There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), simulation [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent-Dunes), [**Dunhuang-10MW**](#Dunhuang-10MW) and [**MUEEN**](#MUEEN) heliostat field layout data.
+There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), simulation [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent-Dunes), [**Dunhuang-10MW**](#Dunhuang-10MW), [**MUEEN**](#MUEEN) and [**Solar Two**](#SolarTwo) heliostat field layout data.
 
 
 ## Heliostat Field Layouts
@@ -17,6 +17,7 @@ There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-f
 |[Crescent-Dunes](#Crescent-Dunes)|Real CSP Heliostat Layout|
 |[Dunhuang-10MW](#Dunhuang-10MW)|Real CSP Heliostat Layout|
 |[MUEEN](#MUEEN)|A heliostat lay out method|
+|[Solar Two](#SolarTwo)|Real CSP Heliostat Layout|
 
 
 ### Gemasolar  
@@ -127,7 +128,7 @@ An example MUEEN layout look likes as follows:
 
 ![MUEEN-example](./MUEEN/layout.png)
 
-### Solar Two  
+### SolarTwo  
 Solar Two was a collaborative, cost-shared project between 11 U.S. industry and utility partners and the U.S. Department of Energy to validate molten-salt power tower technology. The Solar Two plant, located east of Barstow, CA, comprised 1926 heliostats, a receiver, a thermal storage system, a steam generation system, and steam-turbine power block [[12]](#reference).  
 
 The layout of it look likes as follows:  
