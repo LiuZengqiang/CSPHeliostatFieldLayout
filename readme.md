@@ -3,7 +3,7 @@
 ## Introduction
 This repository contains the Concentrating Solar Power, CSP ( or Solar Tower Power, SPT) heliostat field layout data commonly used in concentrated solar power technology research.
 
-There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), virtual heliostat field [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent-Dunes), [**Dunhuang-10MW**](#Dunhuang-10MW), [**MUEEN**](#MUEEN) , [**Solar Two**](#SolarTwo) and [**NSTTF**](#NSTTF) heliostat field layouts.
+There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), virtual heliostat field [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent-Dunes), [**Dunhuang-10MW**](#Dunhuang-10MW), [**MUEEN**](#MUEEN), [**Solar Two**](#SolarTwo), [**NSTTF**](#NSTTF) and [**Radial-Staggered**](#Radial-Staggered) heliostat field layouts.
 
 
 ## Heliostat Field Layouts
@@ -19,6 +19,7 @@ There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-f
 |[MUEEN](#MUEEN)|A heliostat lay out method|
 |[Solar Two](#SolarTwo)|Real CSP Heliostat Layout|
 |[NSTTF](#NSTTF)|Real CSP Heliostat Layout|
+|[RadialStaggered](#Radial-Staggered)|A heliostat lay out method|
 
 
 ### Gemasolar  
@@ -141,6 +142,13 @@ National Solar Thermal Test Facility (NSTTF) is a test facility of CSP in the Un
 
 The layout of it look likes as follows:  
 ![NSTTF](./NSTTF/layout.png)
+
+
+### Radial-Staggered  
+Common radial staggered heliostat layout, the heliostats layout create python script ``RadialStaggered.py`` is refenreced from open source tool [Tracer (Tracer/tracer/models/heliostat_field.py)](https://github.com/yewang726/Tracer/) [[13]](#reference).
+
+An example Radial-Staggered layout look likes as follows:  
+![RadialStaggered](./RadialStaggered/layout.png)
 
 ## Reference
 
