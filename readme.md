@@ -3,23 +3,24 @@
 ## Introduction
 This repository contains the Concentrating Solar Power, CSP ( or Solar Tower Power, SPT) heliostat field layout data commonly used in concentrated solar power technology research.
 
-There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), virtual heliostat field [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent-Dunes), [**Dunhuang-10MW**](#Dunhuang-10MW), [**MUEEN**](#MUEEN), [**Solar Two**](#SolarTwo), [**NSTTF**](#NSTTF) and [**Radial-Staggered**](#Radial-Staggered) heliostat field layouts.
+There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), virtual heliostat field [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent-Dunes), [**Dunhuang-10MW**](#Dunhuang-10MW), [**MUEEN**](#MUEEN), [**Solar Two**](#SolarTwo), [**NSTTF**](#NSTTF), [**Radial-Staggered**](#Radial-Staggered) and [**Campo**](#Campo) heliostat field layouts.
 
 
 ## Heliostat Field Layouts
 
-|Layout Name|Type|
-|:-:|:-:|
-|[Gemasolar](#Gemasolar)|Real CSP Heliostat Layout|
-|[Gemasolar-from-FluxSPT](#Gemasolar-from-FluxSPT)|Real CSP Heliostat Layout|
-|[6282](#6282)|Virtual Heliostat Layout|
-|[PS10](#PS10)|Real CSP Heliostat Layout|
-|[Crescent-Dunes](#Crescent-Dunes)|Real CSP Heliostat Layout|
-|[Dunhuang-10MW](#Dunhuang-10MW)|Real CSP Heliostat Layout|
-|[MUEEN](#MUEEN)|A heliostat lay out method|
-|[Solar Two](#SolarTwo)|Real CSP Heliostat Layout|
-|[NSTTF](#NSTTF)|Real CSP Heliostat Layout|
-|[RadialStaggered](#Radial-Staggered)|A heliostat lay out method|
+|                    Layout Name                    |                               Type                               |
+| :-----------------------------------------------: | :--------------------------------------------------------------: |
+|              [Gemasolar](#Gemasolar)              |                    Real CSP Heliostat Layout                     |
+| [Gemasolar-from-FluxSPT](#Gemasolar-from-FluxSPT) |                    Real CSP Heliostat Layout                     |
+|                   [6282](#6282)                   |                     Virtual Heliostat Layout                     |
+|                   [PS10](#PS10)                   |                    Real CSP Heliostat Layout                     |
+|         [Crescent-Dunes](#Crescent-Dunes)         |                    Real CSP Heliostat Layout                     |
+|          [Dunhuang-10MW](#Dunhuang-10MW)          |                    Real CSP Heliostat Layout                     |
+|                  [MUEEN](#MUEEN)                  |                    A heliostat lay out method                    |
+|              [Solar Two](#SolarTwo)               |                    Real CSP Heliostat Layout                     |
+|                  [NSTTF](#NSTTF)                  |                    Real CSP Heliostat Layout                     |
+|       [RadialStaggered](#Radial-Staggered)        |                    A heliostat lay out method                    |
+|                  [Campo](#Campo)                  | A heliostat lay out method, it is a type of Radial Staggered layout |
 
 
 ### Gemasolar  
@@ -145,10 +146,17 @@ The layout of it look likes as follows:
 
 
 ### Radial-Staggered  
-Common radial staggered heliostat layout, the heliostats layout create python script ``RadialStaggered.py`` is refenreced from open source tool [Tracer (Tracer/tracer/models/heliostat_field.py)](https://github.com/yewang726/Tracer/) [[13]](#reference).
+Common radial staggered heliostat layout, the heliostats layout create python script ``RadialStaggered.py`` is referenced from open source tool [Tracer (Tracer/tracer/models/heliostat_field.py)](https://github.com/yewang726/Tracer/) [[13]](#reference).
 
 An example Radial-Staggered layout look likes as follows:  
 ![RadialStaggered](./RadialStaggered/layout.png)
+
+### Campo   
+Campo is a algorithm for the design and performance analysis of heliostat fields, it is able to generate refular but flexible redial staggered layouts of heliostat fields. A major feature of campo is the ability to perform fast and accurate calculations of the shadowing and blocking factor for each and every one of the heliostats in the ﬁeld. Using the Campo layout pattern, the heliostat field layout optimization would proceed from the densest ﬁelds, with the worst shadowing and blocking factor, towards expanded ﬁelds [[14]](#reference).  
+Campo layout create python script ``Campo.py`` is referenced from open source tool [solstice-scripts (solstice-scripts/solsticepy/cal_layout.py)](https://github.com/anustg/solstice-scripts/) [[15]](#reference).
+
+An example Campo layout look likes as follows:
+![Camp](./Campo/layout.png)
 
 ## Reference
 
@@ -177,3 +185,7 @@ An example Radial-Staggered layout look likes as follows:
 [12]. Bradshaw R W, DAWSON D B, DE LA ROSA W, et al. Final test and evaluation results from the solar two project[R]. Sandia National Lab.(SNL-NM), Albuquerque, NM (United States); Sandia National Lab.(SNL-CA), Livermore, CA (United States), 2002.
 
 [13]. yewang726 (2018). Tracer. GitHub. https://github.com/yewang726/Tracer/. Accessed 22 January 2024.
+
+[14]. Collado F J, Guallar J. Campo: Generation of regular heliostat fields[J]. Renewable energy, 2012, 46: 49-59.  
+
+[15]. anustg (2020). solstice-scripts. Github. https://github.com/anustg/solstice-scripts. Accessed 23 January 2024.
