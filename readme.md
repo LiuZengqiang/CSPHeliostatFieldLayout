@@ -16,11 +16,13 @@ There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-f
 |                   [PS10](#PS10)                   |                    Real CSP Heliostat Layout                     |
 |         [Crescent-Dunes](#Crescent-Dunes)         |                    Real CSP Heliostat Layout                     |
 |          [Dunhuang-10MW](#Dunhuang-10MW)          |                    Real CSP Heliostat Layout                     |
-|                  [MUEEN](#MUEEN)                  |                    A heliostat lay out method                    |
+|                  [MUEEN](#MUEEN)                  |                    A heliostat layout method                    |
 |              [Solar Two](#SolarTwo)               |                    Real CSP Heliostat Layout                     |
 |                  [NSTTF](#NSTTF)                  |                    Real CSP Heliostat Layout                     |
-|       [RadialStaggered](#Radial-Staggered)        |                    A heliostat lay out method                    |
-|                  [Campo](#Campo)                  | A heliostat lay out method, it is a type of Radial Staggered layout |
+|       [RadialStaggered](#Radial-Staggered)        |                    A heliostat layout method                    |
+|                  [Campo](#Campo)                  | A heliostat layout method, it is a type of Radial Staggered layout |
+|[Biomimetic-Surround](#Biomimetic-Surround)| A heuristic surround heliostat layout method inspired from spiral patterns of the phyllotaxis disc |
+|[Biomimetic-PS10-like](#Biomimetic-PS10-like)| A heuristic northern heliostat layout method inspired from spiral patterns of the phyllotaxis disc |
 
 
 ### Gemasolar  
@@ -158,6 +160,32 @@ Campo layout create python script ``Campo.py`` is referenced from open source to
 An example Campo layout look likes as follows:
 ![Camp](./Campo/layout.png)
 
+### Biomimetic-Surround
+Biomimetic-Surround is a new heuristic algorithm for generating surround heliostat layout. The polar coordinate of each heliostat $(r_{k}, \theta_{k})$ can be calculated by following equation:
+$$
+r_{k} = a * k^{b}  \\
+\theta_{k} = 2 * pi * \phi^{2} * k
+$$
+
+where the $k$ is the id of heliostat (start from 1), phi is the golden ratio, equals to $(1+\sqrt{5})/2$, $a$ and $b$ is the coefficient that control the density of the result field, $a$ is 4.5 and $b$ is 0.65 by default.
+
+The biomimetic layout has the advantage of a continuous heliostat density which is similar to the efficiency of heliostats [[16]](#reference).
+
+The Biomimetic surround layout can be created by the python script ``Biomimetic_Surround.py``.
+
+An example Biomimetic-Surround layout look likes as follows:
+![Biomimetic-Surround](./Biomimetic_Surround/layout.png)
+
+
+### Biomimetic-PS10-like
+Biomimetic-PS10-like is a heuristic algorithm for generating northern heliostat layout, which is constrained by the PS10 field (base field). 
+The polar coordinates are calculated in the same way as Biomimetic-Surround, and the result coordinate must be within the convex hull of the PS10 field.
+
+The Biomimetic-PS10-like layout can be created by the python script ``Biomimetic_PS10-like.py``.
+
+An example Biomimetic-PS10-like layout look likes as follows:
+![Biomimetic-PS10-like](./Biomimetic_PS10-like/layout.png)
+
 ## Reference
 
 [1]. Sánchez-González A, Rodríguez-Sánchez M R, Santana D. Aiming strategy model based on allowable flux densities for molten salt central receivers[J]. Solar Energy, 2017, 157: 1130-1144.
@@ -189,3 +217,5 @@ An example Campo layout look likes as follows:
 [14]. Collado F J, Guallar J. Campo: Generation of regular heliostat fields[J]. Renewable energy, 2012, 46: 49-59.  
 
 [15]. anustg (2020). solstice-scripts. Github. https://github.com/anustg/solstice-scripts. Accessed 23 January 2024.
+
+[16]. Noone, C.J., Torrilhon, M., Mitsos, A., 2012. Heliostat field optimization: A new computationally efficient model and biomimetic layout. Solar Energy 86, 792–803. https://doi.org/10.1016/j.solener.2011.12.007
