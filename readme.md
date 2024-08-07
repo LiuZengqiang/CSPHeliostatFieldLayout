@@ -3,7 +3,7 @@
 ## Introduction
 This repository contains the Concentrating Solar Power, CSP ( or Solar Tower Power, SPT) heliostat field layout data commonly used in concentrated solar power technology research.
 
-There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), virtual heliostat field [**6282**](#6282)  , [**PS10**](#PS10) , [**Crescent Dunes**](#Crescent-Dunes), [**Dunhuang-10MW**](#Dunhuang-10MW), [**MUEEN**](#MUEEN), [**Solar Two**](#SolarTwo), [**NSTTF**](#NSTTF), [**Radial-Staggered**](#Radial-Staggered) and [**Campo**](#Campo) heliostat field layouts.
+There are [**Gemasolar**](#Gemasolar), [**Gemasolar from FluxSPT**](#Gemasolar-from-FluxSPT), virtual heliostat field [**6282**](#6282), [**PS10**](#PS10), [**Crescent Dunes**](#Crescent-Dunes), [**Dunhuang-10MW**](#Dunhuang-10MW), [**MUEEN**](#MUEEN), [**Solar Two**](#SolarTwo), [**NSTTF**](#NSTTF), [**Radial-Staggered**](#Radial-Staggered), [**Campo**](#Campo), [**Biomimetic-Surround**](#Biomimetic-Surround) and [**Biomimetic-PS10-like**](#Biomimetic-PS10-like) heliostat field layouts.
 
 
 ## Heliostat Field Layouts
@@ -157,15 +157,13 @@ An example Radial-Staggered layout look likes as follows:
 Campo is a algorithm for the design and performance analysis of heliostat fields, it is able to generate refular but flexible redial staggered layouts of heliostat fields. A major feature of campo is the ability to perform fast and accurate calculations of the shadowing and blocking factor for each and every one of the heliostats in the ﬁeld. Using the Campo layout pattern, the heliostat field layout optimization would proceed from the densest ﬁelds, with the worst shadowing and blocking factor, towards expanded ﬁelds [[14]](#reference).  
 Campo layout create python script ``Campo.py`` is referenced from open source tool [solstice-scripts (solstice-scripts/solsticepy/cal_layout.py)](https://github.com/anustg/solstice-scripts/) [[15]](#reference).
 
-An example Campo layout look likes as follows:
+An example Campo layout look likes as follows:  
 ![Camp](./Campo/layout.png)
 
 ### Biomimetic-Surround
 Biomimetic-Surround is a new heuristic algorithm for generating surround heliostat layout. The polar coordinate of each heliostat $(r_{k}, \theta_{k})$ can be calculated by following equation:
-$$
-r_{k} = a * k^{b}  \\
-\theta_{k} = 2 * pi * \phi^{2} * k
-$$
+
+$$r_{k} = a * k^{b},  \theta_{k} = 2 * pi * \phi^{2} * k$$
 
 where the $k$ is the id of heliostat (start from 1), phi is the golden ratio, equals to $(1+\sqrt{5})/2$, $a$ and $b$ is the coefficient that control the density of the result field, $a$ is 4.5 and $b$ is 0.65 by default.
 
